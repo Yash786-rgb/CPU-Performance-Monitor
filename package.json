@@ -12,6 +12,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "create-react-app": "^3.4.0"
+    "create-react-app": "^3.4.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "moment": "^2.27.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.4.0",
+    "socket.io-client": "^2.3.0",
+    "cpu-stat": "^2.0.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "mongoose": "^5.10.2",
+    "nodemon": "^2.0.4",
+    "os": "^0.1.1",
+    "socket.io": "^2.3.0"
   }
 }
