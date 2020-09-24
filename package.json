@@ -1,0 +1,17 @@
+{
+  "name": "reactrev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "node nodeServer/app.js",
+    "frontend": "npm start --prefix myapp",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-app": "^3.4.0"
+  }
+}
