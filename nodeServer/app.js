@@ -1,9 +1,7 @@
 var express = require("express");
 var app = express();
 var port = process.env.PORT || 1001;
-var server = app.listen(port, () => {
-  console.log("server started on port " + port);
-});
+var server = app.listen(port);
 var io = require("socket.io")(server);
 var mongoose = require("mongoose");
 var C = "mongodb://localhost/cpu__data";
@@ -72,8 +70,6 @@ m.forEach((e) => {
     macAd = arr[0].mac;
   }
 });
-console.log(macAd);
-
 function checkAndAdd(e) {
   return new Promise((resolve, reject) => {
     Machine.findOne({ macA: macAd }, function (err, found) {
